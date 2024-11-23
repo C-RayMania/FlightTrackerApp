@@ -36,6 +36,15 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "f4662b7e-0874-4a16-8345-0e3b31d0088a"
+      }
+    },
+    "owner": "broveer"
   }
 }
