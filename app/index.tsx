@@ -15,7 +15,7 @@ const App: React.FC = () => {
   const [aircraftType, setAircraftType] = useState<string>("Unknown");
   const [loading, setLoading] = useState<boolean>(false);
 
-  const apiKey = "4043aa158c27c399be378c7db629f0f9";
+  const apiKey = "298828eefb1a2ce13152b47e53bcb909";
   const weatherKey = "PFu5xgsh2voHfbohtQTWaQCh1jnB4RAv";
 
   const handleSearchFCode = (text: string) => {
