@@ -47,19 +47,23 @@ const SearchBar: React.FC<SearchBarProps> = ({
         placeholderTextColor="#999"
         onChangeText={(text) => onSearchFCode && onSearchFCode(text)}
         autoCapitalize="characters"
+        maxLength={3}
+        autoCorrect={false}
       />
       <TextInput
-        style={[styles.input, { width: "40%", marginHorizontal: 6 }]}
+        style={[styles.input, { width: "37%", marginHorizontal: 6 }]}
         placeholder="Flight Number"
         placeholderTextColor="#999"
         onChangeText={(text) => onSearchFNumber && onSearchFNumber(text)}
         keyboardType="numeric"
+        maxLength={4}
       />
       <TextInput
-        style={[styles.input, { width: "30%", marginLeft: 6 }]}
-        placeholder="Date"
-        placeholderTextColor="#999"
+        style={[styles.input, { width: "33%", marginLeft: 6, backgroundColor:'#111', borderColor: '#222' }]}
+        placeholder="Date (Soon)"
+        placeholderTextColor="#444"
         onChangeText={handleTextChangeDate}
+        readOnly={true}
       />
     </View>
   );
